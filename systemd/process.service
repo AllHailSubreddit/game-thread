@@ -6,8 +6,8 @@ Requires=docker.service
 
 [Service]
 WorkingDirectory=/etc/opt/allhail/game-thread
-ExecStart=/usr/local/bin/docker run --name allhail_game-thread_process \
-                                    --env-file .env \
-                                    --volume /var/opt/allhail/game-thread:/var/opt/app \
-                                    --rm \
-                                    allhail/game-thread:latest process
+ExecStart=/usr/bin/docker run --name allhail_game-thread_process \
+                              --env-file .env \
+                              --volume /var/opt/allhail/game-thread:/var/opt/app \
+                              --rm \
+                              allhail/game-thread:latest process
