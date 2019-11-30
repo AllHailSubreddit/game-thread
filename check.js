@@ -57,8 +57,10 @@ async function main() {
 
   logger.info(
     {
-      gameIds,
-      gamesCount: games.length,
+      existingGameIds: existingIds,
+      existingGamesCount: existingIds.length,
+      newGameIds: gameIds,
+      newGamesCount: gameIds.length,
       storedGameIds,
       storedGamesCount: storedGameIds.length,
     },
