@@ -1,0 +1,13 @@
+[Unit]
+Description=Checks for new games being played on the current day for game thread creation
+Documentation=https://github.com/AllHailSubreddit/game-thread
+After=docker.service
+Requires=docker.service
+
+[Service]
+WorkingDirectory=/etc/opt/allhail/game-thread
+ExecStart=/usr/local/bin/docker run --name allhail_game-thread_check \
+                                    --env-file .env \
+                                    --volume /var/opt/allhail/game-thread:/var/opt/app \
+                                    --rm \
+                                    allhail/game-thread:latest check

@@ -1,0 +1,26 @@
+{
+  "name": "game-thread",
+  "version": "1.0.0",
+  "author": "/u/pushECX",
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "eslint": "6.7.1",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "nock": "11.7.0",
+    "pino-pretty": "3.4.0",
+    "prettier": "1.19.1"
+  },
+  "dependencies": {
+    "axios": "0.19.0",
+    "dotenv": "8.2.0",
+    "fs-extra": "8.1.0",
+    "globby": "10.0.1",
+    "moment-timezone": "0.5.27",
+    "pino": "5.14.0",
+    "snoowrap": "1.20.1"
+  }
+}

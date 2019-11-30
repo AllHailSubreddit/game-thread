@@ -1,0 +1,9 @@
+[Unit]
+Description=Triggers allhail game-thread check service
+Documentation=https://github.com/AllHailSubreddit/game-thread
+
+[Install]
+WantedBy=timers.target
+
+[Timer]
+OnCalendar=*:00/5
