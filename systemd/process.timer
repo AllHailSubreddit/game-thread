@@ -6,4 +6,4 @@ Documentation=https://github.com/AllHailSubreddit/game-thread
 WantedBy=timers.target
 
 [Timer]
-OnCalendar=*:00/5
+OnCalendar=*:00/2
